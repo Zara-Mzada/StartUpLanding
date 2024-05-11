@@ -1,0 +1,440 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --button-red: #F94962;
+    --dark-blue: #02073E;
+    --link-blue: #3183FF;
+    --link-hover: #4F96FF;
+}
+@font-face {
+    font-family: BreeSans;
+    src: url(./assets/fonts/BreeSerif/BreeSerif-Regular.ttf);
+}
+@font-face {
+    font-family: DMsans;
+    src: url(./assets/fonts/DMsans/DMSans-Light.ttf);
+}
+html{
+    font-family: DMsans;
+    font-size: 16px;
+    color: var(--dark-blue);
+}
+
+/* ##### Header ###### */
+header{
+    padding-top: 20px;
+}
+.header-container{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-container ul{
+    margin: 0;
+    padding: 0;
+}
+.header-container ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    font-weight: bold;
+}
+.header-container ul li:last-child{
+    position: relative;
+}
+.header-container ul li:last-child a{
+    color: var(--button-red);
+}
+.header-container ul li:last-child img{
+    position: absolute;
+    z-index: 3;
+    top: 25px;
+    left: 5px;
+}
+.header-container ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ###### Section 1 ####### */
+.section-1{
+    margin-top: 80px;
+}
+.section1-container{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section1-text,
+.section1-container>img{
+    width: 50%;
+}
+.section1-text h1{
+    font-size: 3.75rem;
+    font-family: BreeSans;
+    font-weight: 500;
+    line-height: 5rem;
+    margin-bottom: 1rem;
+}
+.section1-text p{
+    width: 450px;
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+.section1-input{
+    margin-bottom: 2rem;
+}
+.section1-input input{
+    padding: 19px 220px 19px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #E4E6F2;
+    outline: none;
+}
+.section1-input button{
+    padding: 19px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--button-red);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.section1-sponsor{
+    width: 490px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section1-sponsor span{
+    color: #566272;
+}
+.section1-services{
+    width: 1200px;
+    margin: 100px auto;
+}
+.section1-services-text{
+    text-align: center;
+    padding: 0 270px;
+    margin-bottom: 140px;
+}
+.section1-services-text h2{
+    font-weight: 300;
+    font-family: BreeSans;
+    margin-bottom: 1.5rem;
+}
+.section1-services-text p{
+    line-height: 2rem;
+    font-size: 18px;
+}
+.section1-services-flex{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section1-flex-item{
+    width: 390px;
+    display: flex;
+    justify-content: space-between;
+}
+.section1-flex-item img{
+    width: 50px;
+    height: 50px;
+}
+.flex-item-text{
+    padding-left: 20px;
+}
+.flex-item-text h3{
+    margin-bottom: 10px;
+}
+.flex-item-text p{
+    line-height: 2rem;
+}
+
+/* ###### Section 2 ####### */
+.section-2{
+    background-color: #F9FAFC;
+    padding: 60px 0 100px;
+}
+.section2-container{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section2-container>img,
+.section2-text{
+    width: 50%;
+}
+.section2-text{
+    padding-left: 122px;
+}
+.section2-text h1{
+    font-family: BreeSans;
+    font-size: 2.7rem;
+    font-weight: 300;
+    width: 510px;
+    margin-bottom: 20px;
+}
+.section2-text>p{
+    width: 440px;
+    line-height: 2.2rem;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+.section2-checkpart1,
+.section2-checkpart2{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.section2-checkpart1>p,
+.section2-checkpart2>p{
+    margin-left: 15px;
+}
+.section2-text a{
+    display: block;
+    margin-top: 40px;
+    text-decoration: none;
+    color: var(--link-blue);
+}
+.section2-text a:hover{
+    color: var(--link-hover)
+}
+
+/* ######## Section 3 ####### */
+.section-3{
+    padding: 100px 0;
+}
+.section3-container{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section3-container>img,
+.section3-text{
+    width: 50%;
+}
+.section3-text{
+    text-align: left;
+    padding-right: 120px;
+}
+.section3-text h1{
+    font-family: BreeSans;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+.section3-text p{
+    font-size: 1rem;
+    line-height: 2.3rem;
+    margin-bottom: 30px;
+    width: 430px;
+}
+.section3-text a{
+    text-decoration: none;
+    color: var(--link-blue);
+}
+.section3-text a:hover{
+    color: var(--link-hover);
+}
+
+/* ###### Section 4 ###### */
+.section-4{
+    padding: 80px 0;
+}
+.section4-container{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.section4-container h1{
+    width: 600px;
+    font-family: BreeSans;
+    font-size: 2.3rem;
+    font-weight: 400;
+    margin: 0 auto 30px;
+}
+.section4-container p{
+    width: 550px;
+    font-size: 1rem;
+    line-height: 2rem;
+    margin: 0 auto 100px
+}
+
+/* ##### Section 5 ###### */
+.section-5{
+    padding: 50px 0;
+    background-color: #F9FAFC;
+}
+.section5-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.section5-container h1{
+    width: 600px;
+    font-family: BreeSans;
+    font-size: 2.3rem;
+    font-weight: 400;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+.section5-container>p{
+    width: 580px;
+    line-height: 2.3rem;
+    text-align: center;
+    margin: 0 auto 100px;
+}
+.section5-flex{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+.section5-flex-item{
+    display: flex;
+    justify-content: space-between;
+}
+.section5-flex-item h1{
+    font-size: 3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    width: 100px;
+    margin-right: 20px;
+    width: 50px;
+}
+.section5-flex-text {
+    text-align: left;
+}
+.section5-flex-text h3{
+    margin-bottom: 20px;
+}
+.section5-flex-text p{
+    line-height: 2rem;
+    padding-right: 40px;
+}
+
+/* ###### section 6 ###### */
+.section-6{
+    padding-top: 100px;
+    position: relative;
+}
+.section6-container{
+    width: 1200px;
+    margin: 0 auto 50px;
+}
+.section6-container h1{
+    font-family: BreeSans;
+    font-size: 2.3rem;
+    width: 600px;
+    font-weight: 300;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+.section6-container>p{
+    line-height: 2rem;
+    width: 550px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+.section6-container>img{
+    display: block;
+    margin: 0 auto;
+}
+footer{
+    background-color: #F9FAFC;
+    padding: 200px 0 80px;
+}
+.footer-container{
+    width: 1200px;
+    margin: 0 auto;    
+    display: flex;
+    justify-content: space-around;
+}
+.footer-flex-item{
+    width: 200px;
+}
+.footer-flex-item h3{
+    margin-bottom: 40px;
+}
+.footer-flex-item ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.footer-flex-item ul li{
+    margin-bottom: 20px;
+}
+.footer-flex-item ul li a{
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+.footer-flex-item ul li a:hover{
+    color: gray;
+}
+.logo-item a{
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--dark-blue);
+    margin: 10px 0;
+}
+.logo-item a:hover{
+    color: gray;
+}
+.logo-item span{
+    color: #566272;
+    font-size: 0.9rem;
+}
+.contact-us i{
+    margin-right: 10px;
+}
+.above-div{
+    width: 1200px;
+    background-color: #183656;
+    height: 200px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 3;
+    bottom: 360px;
+    left: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+.above-div h1{
+    font-family: BreeSans;
+    font-weight: 500;
+    color: white;
+    width: 340px;
+    padding-top: 40px;
+}
+.above-div-right{
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+}
+.above-div-right img{
+    width: 70px;
+    display: block;
+    margin: 10px auto;
+}
+.above-div-right button{
+    padding: 20px 45px;
+    font-size: 1rem;
+    cursor: pointer;
+}
